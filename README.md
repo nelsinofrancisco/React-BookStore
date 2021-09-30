@@ -42,7 +42,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 
-- To install all the dependencies in the package-lock.json:
+- To install all the dependencies in the package.json:
   - Open the Terminal(Mac/Linux) or the Cmd (Windows);
   - Navigate to be inside the todo-list repo folder;
   - Run npm install or npm i or yarn install;
