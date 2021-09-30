@@ -60,5 +60,8 @@
     "stylelint-csstree-validator": "1.x",
     "stylelint-scss": "3.x",
     "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
