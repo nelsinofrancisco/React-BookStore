@@ -1,44 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+# React Book Store
 
-In the project directory, you can run:
+> React Book Store is a project for learning core concepts of React/Redux, listing books that are fetched from an API using Redux Middleware, and also doing requests for deleting adding and updating books;
 
-### `yarn start`
+Basic UI of the project:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![screenshot](screenshot1.png);
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Built With
 
-### `yarn test`
+- React
+- Redux
+- Js
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
 
-### `yarn build`
+[Heroku Demo Link](https://nelsino-react-bookstore.herokuapp.com/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Description (Loom Video)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- To be Updated
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `yarn eject`
+To get a local copy up and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Git/GitHub;
+- Optional ( IDE installed in your machine ) - recommended IDE: Vscode;
+- Node or Yarn installed locally;
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Setup
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- To clone this repo:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to where you want to paste the Repo folder;
+  - Type `git clone https://github.com/nelsinofrancisco/leaderboard.git`;
+  - Open the folder todo-list that was created on your IDE;
 
-## Learn More
+### Install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- To install all the dependencies in the package-lock.json:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to be inside the todo-list repo folder;
+  - Run npm install or npm i or yarn install;
+  
+### Run tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Linters Tests:
+  - Eslint: run `npx eslint .`
+  - Stylelint: run `npx stylelint "**/*.{css,scss}"`
+- Run a Live Version of the Dist Folder:
+  - Run `npm start or yarn start`
+
+### Deployment
+
+The Page is Deployed in the branch gh-pages;
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@nelsinofrancisco](https://github.com/nelsinofrancisco)
+- Twitter: [@nelsino_s](https://twitter.com/nelsino_s)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nelsinofrancisco/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledges
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
