@@ -51,6 +51,10 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "prop-types": "^15.7.2",
+    "stylelint": "13.x",
+    "stylelint-config-standard": "21.x",
+    "stylelint-csstree-validator": "1.x",
+    "stylelint-scss": "3.x",
     "uuid": "^8.3.2"
   }
 }
