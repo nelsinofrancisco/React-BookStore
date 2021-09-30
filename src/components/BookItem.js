@@ -4,10 +4,10 @@ import ChapterProgress from './ChapterProgress';
 import ChapterUpdateProgress from './ChapterUpdateProgress';
 
 const BookItem = (props) => {
-  const { genre, author, title } = props;
+  const { categories, id, title } = props;
   return (
     <div className="bookItemcontainer">
-      <BookInfo genre={genre} author={author} title={title} />
+      <BookInfo categories={categories} id={id} title={title} />
       <ChapterProgress />
       <ChapterUpdateProgress />
     </div>
@@ -15,9 +15,9 @@ const BookItem = (props) => {
 };
 
 BookItem.propTypes = {
-  genre: PropTypes.string.isRequired,
+  categories: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default BookItem;
