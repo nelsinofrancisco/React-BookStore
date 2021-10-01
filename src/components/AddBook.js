@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/Books/Books';
+import { addBook } from '../redux/books/Books';
 import '../index.css';
 
 const bookGenres = [
