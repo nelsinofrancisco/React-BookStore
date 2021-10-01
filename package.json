@@ -1,5 +1,5 @@
 {
-  "homepage": "https://nelsino-react-bookstore.herokuapp.com/",
+  "homepage": "https://nelsino-react-redux-bookstore.netlify.app",
   "name": "react-bookstore",
   "version": "0.1.0",
   "private": true,
