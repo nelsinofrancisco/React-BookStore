@@ -16,7 +16,7 @@ const BookInfo = (props) => {
     <div className={BookInfoStyle.BookInfoContainer}>
       <p className="fontStyle5 fontColor1">{categories}</p>
       <p className="fontStyle1 fontColor1">{title}</p>
-      <p className="fontStyle2 fontColor2 mb1">{id}</p>
+      <p className="fontStyle2 fontColor2 mb1">{`Book Id: ${id}`}</p>
       <div className={BookInfoStyle.bookInfoActionsContainer}>
         <button className={BookInfoStyle.BIActionsButton} type="button">Comments</button>
         <button className={BookInfoStyle.BIActionsButton} type="button" onClick={() => removeBookFromStore(id)}>Remove</button>
