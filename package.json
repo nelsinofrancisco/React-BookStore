@@ -1,5 +1,5 @@
 {
-  "homepage": "https://nelsino-react-bookstore.herokuapp.com/",
+  "homepage": "https://nelsino-react-redux-bookstore.netlify.app",
   "name": "react-bookstore",
   "version": "0.1.0",
   "private": true,
@@ -12,9 +12,11 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
-    "react-redux": "^7.2.3",
+    "react-redux": "^7.2.5",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
     "uuid": "^8.3.2"
   },
   "scripts": {
@@ -51,10 +53,15 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "prop-types": "^15.7.2",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
     "stylelint": "13.x",
     "stylelint-config-standard": "21.x",
     "stylelint-csstree-validator": "1.x",
     "stylelint-scss": "3.x",
     "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }

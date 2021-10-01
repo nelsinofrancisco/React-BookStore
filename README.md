@@ -16,7 +16,7 @@ Basic UI of the project:
 
 ## Live Demo
 
-[Heroku Demo Link](https://nelsino-react-bookstore.herokuapp.com/)
+[Demo Link](https://nelsino-react-redux-bookstore.netlify.app)
 
 ## Project Description (Loom Video)
 
@@ -57,7 +57,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-The Page is Deployed in the branch gh-pages;
+The Page is Deployed on this [link](https://nelsino-react-redux-bookstore.netlify.app) using Heroku
 
 ## Authors
 
