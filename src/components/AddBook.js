@@ -1,6 +1,7 @@
+/* eslint-disable import/extensions */
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/Books';
+import { addBook } from '../redux/books/Books.js';
 import '../index.css';
 
 const bookGenres = [
