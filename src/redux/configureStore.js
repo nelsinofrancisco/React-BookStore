@@ -1,7 +1,6 @@
-/* eslint-disable import/extensions */
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { logger } from 'redux-logger';
-import booksReducer from './books/books.js';
+import booksReducer from './books/books';
 
 const reducer = combineReducers({
   books: booksReducer,

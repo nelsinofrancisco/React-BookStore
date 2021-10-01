@@ -1,8 +1,7 @@
-/* eslint-disable import/extensions */
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import BookInfoStyle from '../styles/BookInfo.module.css';
-import { removeBook } from '../redux/books/books.js';
+import { removeBook } from '../redux/books/books';
 
 const BookInfo = (props) => {
   const dispatch = useDispatch();
