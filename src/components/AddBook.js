@@ -56,6 +56,7 @@ const AddBook = () => {
         className="formContainer"
         onSubmit={(e) => {
           submitBookToStore(e.target);
+          e.children[1].value = '';
           e.preventDefault();
         }}
       >
