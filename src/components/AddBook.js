@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/Books.js';
+import { addBook } from '../redux/books/books.js';
 import '../index.css';
 
 const bookGenres = [
@@ -55,9 +55,9 @@ const AddBook = () => {
       <form
         className="formContainer"
         onSubmit={(e) => {
-          submitBookToStore(e.target);
-          e.children[1].value = '';
           e.preventDefault();
+          submitBookToStore(e.target);
+          e.target.children[0].value = '';
         }}
       >
         <input className="addBookTitle fontStyle9 fontColor4" type="text" placeholder="Book title" />
