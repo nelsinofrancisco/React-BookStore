@@ -16,7 +16,7 @@ Basic UI of the project:
 
 ## Live Demo
 
-[Heroku Demo Link](https://nelsino-react-redux-bookstore.netlify.app)
+[Demo Link](https://nelsino-react-redux-bookstore.netlify.app)
 
 ## Project Description (Loom Video)
 
