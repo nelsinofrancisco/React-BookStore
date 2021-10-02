@@ -1,6 +1,6 @@
 const ChapterUpdateProgress = () => {
   const chapters = [];
-  for (let i = 0; i < 31; i += 1) {
+  for (let i = 1; i < 31; i += 1) {
     const chapter = `Chapter ${i}`;
 
     chapters.push(chapter);
