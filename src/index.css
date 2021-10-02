@@ -72,9 +72,14 @@ body {
   font-size: 0.813rem;
 }
 
+.fontStyle1,
 .fontStyle5,
 .fontStyle6 {
   font-weight: 700;
+}
+
+.fontStyle1 {
+  font-size: 1.375rem;
 }
 
 .fontStyle6 {
@@ -129,28 +134,62 @@ body {
   margin-bottom: 1rem;
 }
 
+.appDefaultButton,
+.addBookTitle,
+.addBookGenre {
+  padding: 0.5rem 1rem;
+}
+
 .appDefaultButton {
   background-color: var(--font-color3);
   border-radius: 3px;
-  padding: 0.5rem 1rem;
 }
 
 .appDefaultButton:hover {
   background-color: var(--font-color2);
 }
 
-.booksContainer {
-  display: flex;
-  flex-direction: column;
+.booksContainer,
+.chapterProgressContainer,
+.categoriesPageContainer {
   justify-content: center;
-  align-items: center;
-  margin-top: 2.5rem;
+}
+
+.booksContainer,
+.bookItemcontainer,
+.chapterProgressContainer,
+.addBookContainer,
+.formContainer,
+.categoriesPageContainer {
+  display: flex;
+}
+
+.booksContainer,
+.formContainer,
+.categoriesPageContainer {
   width: 100%;
 }
 
-.bookItemcontainer {
-  display: flex;
+.booksContainer,
+.addBookContainer {
+  flex-direction: column;
+}
+
+.booksContainer,
+.categoriesPageContainer {
+  align-items: center;
+}
+
+.booksContainer {
+  margin-top: 2.5rem;
+}
+
+.bookItemcontainer,
+.addBookContainer {
   width: 80%;
+}
+
+.bookItemcontainer {
   justify-content: space-around;
   background-color: #fff;
   border-radius: 5px;
@@ -158,15 +197,7 @@ body {
   padding: 1rem;
 }
 
-.chapterProgressContainer {
-  display: flex;
-  justify-content: center;
-}
-
 .addBookContainer {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   border-top: 2px solid var(--border-color1);
   margin: auto;
@@ -174,23 +205,21 @@ body {
 }
 
 .formContainer {
-  display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 
-.addBookTitle {
-  border-radius: 4px;
-  border: solid 1px var(--border-color1);
-  min-width: 45%;
-  padding: 0.5rem 1rem;
-}
-
+.addBookTitle,
 .addBookGenre {
   border-radius: 4px;
   border: solid 1px var(--border-color1);
+}
+
+.addBookTitle {
+  min-width: 45%;
+}
+
+.addBookGenre {
   min-width: 35%;
-  padding: 0.5rem 1rem;
 }
 
 .addBookBtn {
@@ -198,24 +227,22 @@ body {
 }
 
 .categoriesPageContainer {
-  display: flex;
-  width: 100%;
   height: 50vh;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+}
+
+.percentageCircleContainer,
+.percentageCircle > circle {
+  width: 100px;
+  height: 100px;
 }
 
 .percentageCircleContainer {
   position: relative;
-  width: 100px;
-  height: 100px;
   margin-right: 0.8rem;
 }
 
 .percentageCircle > circle {
-  width: 100px;
-  height: 100px;
   fill: none;
   stroke-width: 5px;
   stroke: #000;
