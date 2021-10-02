@@ -1,7 +1,8 @@
+/* eslint-disable arrow-body-style */
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/books';
 import '../index.css';
+import { addBook } from '../redux/books/books';
 
 const bookGenres = [
   'Horror',
@@ -18,7 +19,8 @@ const bookGenres = [
 
 const AddBook = () => {
   const dispatch = useDispatch();
-  const books = useSelector((state) => state.books);
+  const books = useSelector((state) => state.books.data);
+
   let id;
   let max = Number.MIN_VALUE;
 
@@ -26,25 +28,25 @@ const AddBook = () => {
     id = 1;
   } else {
     books.forEach((obj) => {
-      if (obj.id > max) {
-        max = obj.id;
+      const id = parseInt(obj.item_id, 10);
+      if (id > max) {
+        max = id;
       }
     });
 
-    id = max + 1;
+    id = (max + 1).toString();
   }
 
-  const submitBookToStore = (element) => {
+  const submitBookToStore = async (element) => {
     const title = element.children[0].value;
-    const categories = element.children[1].value;
+    const category = element.children[1].value;
 
     const newBook = {
-      id,
+      item_id: id,
       title,
-      categories,
+      category,
     };
 
-    // dispatch an action and pass it the newBook object (your action's payload)
     dispatch(addBook(newBook));
   };
 
