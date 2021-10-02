@@ -1,6 +1,6 @@
 const ChapterProgress = () => {
-  const percentage = Math.floor(Math.random() * 100) / 100;
-  const percentageString = percentage * 100;
+  const percentage = Math.floor(Math.random() * 100 + 1) / 100;
+  const percentageString = Math.floor(percentage * 100);
   const circle2 = {
     stroke: '#0290ff',
     strokeDasharray: '251',
