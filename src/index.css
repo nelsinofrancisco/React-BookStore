@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
 :root {
   --font-color1: #121212;
@@ -22,80 +22,80 @@ body {
   background-color: var(--background-color1);
 }
 
-/* Default Font-Styles */
-.fontStyle1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.375rem;
-  font-weight: bold;
+.fontStyle1,
+.fontStyle2,
+.fontStyle3,
+.fontStyle4 {
+  font-family: Roboto, sans-serif;
 }
 
-.fontStyle2 {
-  font-family: 'Roboto', sans-serif;
+.fontStyle5,
+.fontStyle6,
+.fontStyle7,
+.fontStyle8,
+.fontStyle9,
+.fontStyle10 {
+  font-family: Montserrat, 'Times New Roman', Times, serif;
+}
+
+.fontStyle2,
+.fontStyle3,
+.fontStyle4 {
+  font-weight: 300;
+}
+
+.fontStyle4,
+.fontStyle5,
+.fontStyle10 {
+  opacity: 0.5;
+}
+
+.fontStyle2,
+.fontStyle5,
+.fontStyle7 {
   font-size: 0.875rem;
-  font-weight: 300;
 }
 
-.fontStyle3 {
-  font-family: 'Roboto', sans-serif;
+.fontStyle3,
+.fontStyle9 {
   font-size: 1rem;
-  font-weight: 300;
+}
+
+.fontStyle4,
+.fontStyle5,
+.fontStyle6,
+.fontStyle7 {
+  text-decoration: none;
 }
 
 .fontStyle4 {
-  opacity: 0.5;
-  font-family: 'Roboto', sans-serif;
   font-size: 0.813rem;
-  font-weight: 300;
-  text-decoration: none;
 }
 
-.fontStyle5 {
-  opacity: 0.5;
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
-  font-size: 0.875rem;
-  font-weight: bold;
-  text-decoration: none;
+.fontStyle1,
+.fontStyle5,
+.fontStyle6 {
+  font-weight: 700;
+}
+
+.fontStyle1 {
+  font-size: 1.375rem;
 }
 
 .fontStyle6 {
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
   font-size: 1.875rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.fontStyle7 {
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
-  font-size: 0.875rem;
-  text-decoration: none;
 }
 
 .fontStyle8 {
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
   font-size: 2rem;
 }
 
-.fontStyle9 {
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
-  font-size: 1rem;
-}
-
 .fontStyle10 {
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
   font-size: 1.25rem;
-  opacity: 0.5;
 }
 
 .normal {
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-}
-
-.fontColor1 {
-  color: var(--font-color1);
+  font-weight: 400;
 }
 
 .fontColor2 {
@@ -104,10 +104,6 @@ body {
 
 .fontColor3 {
   color: var(--font-color3);
-}
-
-.fontColor4 {
-  color: var(--font-color4);
 }
 
 .fontColor5 {
@@ -138,9 +134,13 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Default Button Style */
-.appDefaultButton {
+.appDefaultButton,
+.addBookTitle,
+.addBookGenre {
   padding: 0.5rem 1rem;
+}
+
+.appDefaultButton {
   background-color: var(--font-color3);
   border-radius: 3px;
 }
@@ -149,67 +149,76 @@ body {
   background-color: var(--font-color2);
 }
 
-.appDefaultButton:active {
-  color: var(--font-color1);
+.booksContainer,
+.chapterProgressContainer,
+.categoriesPageContainer {
+  justify-content: center;
+}
+
+.booksContainer,
+.bookItemcontainer,
+.chapterProgressContainer,
+.addBookContainer,
+.formContainer,
+.categoriesPageContainer {
+  display: flex;
+}
+
+.booksContainer,
+.formContainer,
+.categoriesPageContainer {
+  width: 100%;
+}
+
+.booksContainer,
+.addBookContainer {
+  flex-direction: column;
+}
+
+.booksContainer,
+.categoriesPageContainer {
+  align-items: center;
 }
 
 .booksContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 2.5rem;
-  width: 100%;
+}
+
+.bookItemcontainer,
+.addBookContainer {
+  width: 80%;
 }
 
 .bookItemcontainer {
-  display: flex;
-  width: 80%;
   justify-content: space-around;
-  padding: 1rem;
   background-color: #fff;
   border-radius: 5px;
   margin-bottom: 2rem;
-}
-
-.chapterProgressContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 1rem;
 }
 
 .addBookContainer {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   border-top: 2px solid var(--border-color1);
-  padding: 2rem 0 2rem 0;
   margin: auto;
+  padding: 2rem 0;
 }
 
 .formContainer {
-  display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 
-.addBookTitle {
+.addBookTitle,
+.addBookGenre {
   border-radius: 4px;
-  padding: 0.5rem 1rem;
   border: solid 1px var(--border-color1);
+}
+
+.addBookTitle {
   min-width: 45%;
 }
 
-.addBookTitle::placeholder {
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
-  color: var(--font-color4);
-}
-
 .addBookGenre {
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  border: solid 1px var(--border-color1);
   min-width: 35%;
 }
 
@@ -218,10 +227,39 @@ body {
 }
 
 .categoriesPageContainer {
-  display: flex;
-  width: 100%;
   height: 50vh;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+}
+
+.percentageCircleContainer,
+.percentageCircle > circle {
+  width: 100px;
+  height: 100px;
+}
+
+.percentageCircleContainer {
+  position: relative;
+  margin-right: 0.8rem;
+}
+
+.percentageCircle > circle {
+  fill: none;
+  stroke-width: 5px;
+  stroke: #000;
+  transform: translate(10px, 10px);
+}
+
+circle.circle1 {
+  stroke: var(--border-color1);
+  stroke-dashoffset: 0;
+}
+
+.fontColor1,
+.appDefaultButton:active {
+  color: var(--font-color1);
+}
+
+.fontColor4,
+.addBookTitle::placeholder {
+  color: var(--font-color4);
 }

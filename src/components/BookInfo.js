@@ -12,7 +12,7 @@ const BookInfo = (props) => {
     <div className={BookInfoStyle.BookInfoContainer}>
       <p className="fontStyle5 fontColor1">{category}</p>
       <p className="fontStyle1 fontColor1">{title}</p>
-      <p className="fontStyle2 fontColor2 mb1">{`Book Id: ${item_id}`}</p>
+      <p className="fontStyle2 fontColor2 mb1">Generic Book Author</p>
       <div className={BookInfoStyle.bookInfoActionsContainer}>
         <button className={BookInfoStyle.BIActionsButton} type="button">Comments</button>
         <button className={BookInfoStyle.BIActionsButton} type="button" onClick={() => dispatch(removeBook(item_id))}>Remove</button>

@@ -79,6 +79,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledges
 
+The percentage circle indicator is a creation of [Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog) check out their youtube channel for good tutorials on Css & more.
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
