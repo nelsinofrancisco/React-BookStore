@@ -174,7 +174,6 @@ body {
 
 .chapterProgressContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -224,4 +223,25 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.percentageCircleContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 0.8rem;
+}
+
+.percentageCircle > circle {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  stroke-width: 5px;
+  stroke: #000;
+  transform: translate(10px, 10px);
+}
+
+circle.circle1 {
+  stroke: var(--border-color1);
+  stroke-dashoffset: 0;
 }
